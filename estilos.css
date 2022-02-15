@@ -1,0 +1,394 @@
+/* Reset */
+
+/* Pueba de repositorio */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ESTILOS DE index.html */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Imágen de fondo, tamaño y posición del header y su contenido */
+
+#header {
+    height: 195px;
+}
+
+header {
+    background-image: url(imagenes/laboratorio\ header\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 195px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 10px;*/
+}
+
+/* Tamaño del Logo */
+
+#logo {
+    height: 150px;
+    width: 170px;
+    margin-left: 16px;
+}
+
+/* Tamaño del grupo de iconos en el header */
+
+.iconoGrpHeader {
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+}
+
+/* Posición del grupo de iconos dentro del header */
+
+#contenedorGrupoIconos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 8px;
+    align-items: center;
+}
+
+/* Posición de los iconos en el grupo dentro del header */
+/*#face {
+    position: absolute;
+    top: 75px;
+    right: 95px;
+}
+
+#whats {
+    position: absolute;
+    top: 75px;
+    right: 60px;
+}
+
+#insta {
+    position: absolute;
+    top: 75px;
+    right: 25px;
+}
+
+#email {
+    position: absolute;
+    top: 110px;
+    right: 95px;
+}
+
+#direccion{
+    position: absolute;
+    top: 110px;
+    right: 60px;
+}
+
+#presupuesto {
+    position: absolute;
+    top: 110px;
+    right: 25px;
+}*/
+
+/* Alineación de los textos y color de la barra de navegación */
+
+nav {
+    background-color: aquamarine;
+    text-align: center;    
+}
+
+/*Posicionamiento, separación y efectos de los items de la barra de navegación */
+
+#barraNavegaciónSuperior{
+    display: flex;
+    justify-content: center;
+}
+
+.itemsNav1 {
+    margin: 5px;
+    padding: 5px;
+    width: 110px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.itemsNav1:hover {
+    background-color: aqua;
+}
+
+.itemsNav1 a {
+    text-decoration: none;
+}
+
+/* Posición, color y tamaño del contenido central de la página principal */
+
+body {
+    /*background-color: lightseagreen;*/
+    background-image: url(imagenes/lab\ fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Posición, color y tamaño del contenido central de la página de Log In */
+.pagSecundariaMain {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;    
+}
+
+/*#logInMain {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+*/
+#logInTitulo {
+    display: flex;
+    height: 25vh;
+    margin-top: 7vh;
+}
+
+#logInFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 19vw;
+}
+
+.logInLabel {
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilos formulario de creacion y olvido de contraseña */
+/*#olvidoPassMain {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}*/
+
+#olvidoPassTitulo {
+    display: flex;
+    height: 25vh;
+    margin-top: 7vh;
+}
+
+#olvidoPassFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 260px;
+    width: 19vw;
+}
+
+.olvidoPassLabel {
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilo de la página de registro */
+
+/*#registroMain {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    /*border: 5px solid black;
+}*/
+
+#registroTitulo {
+    display: flex;
+    height: 25vh;
+    margin-top: 7vh;
+    /*border: 5px solid red;*/
+}
+
+#registroFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 19vw;
+    /*border: 5px solid blueviolet;*/
+}
+
+.registroLabel {
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Tamaño de las imágenes */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: flex-start;
+}
+
+.elementoMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imagenGrpMain1 {
+    /*margin: 50px;
+    margin-left: 160px;*/
+    height: 200px;
+    width: 200px;
+    border: outset 4px aquamarine;
+}
+
+.elementoMain p {
+    background-color: aquamarine;
+    max-width: 300px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*
+.prueba {
+    display: inline-block;
+}
+
+.parrafoPrueba1 {
+    background-color: aquamarine;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 515px;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+}
+
+.parrafoPrueba2 {
+    background-color: aquamarine;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 825px;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+}
+
+#parrafo1{    
+    width: 300px;
+    margin-left: 130px;
+}
+
+#parrafo2{
+    width: 150px;
+    margin-left: 610px;
+}
+
+#parrafo3{
+    width: 300px;
+    margin-left: 945px;
+}
+
+#parrafo4{    
+    width: 300px;
+    margin-left: 130px;
+}
+
+#parrafo5{
+    width: 300px;
+    margin-left: 530px;
+}
+
+#parrafo6{
+    width: 300px;
+    margin-left: 945px;
+}
+*/
+
+
+/* Estilo footer */
+#footer {
+    background-color: rgb(16, 71, 69);
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.itemFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /*align-items: flex-start;
+    justify-content: space-between;*/
+}
+
+.itemFooter h2 {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 930px) {
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #footer {
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-around;
+    }
+    
+    #direccionYmapa {
+        grid-column: 1/3;
+    }
+
+    #mapaGoogle {
+        width: 100%;
+    }
+}
+/*
+.itemFooter {
+    display: inline-block;
+    position: absolute;
+    top: 955px;
+    width: 400px;
+    margin: 20px;
+}
+
+#sobreNos {
+    left: 25px;
+}
+
+#tablaHorarios {
+    left: 450px;
+}
+
+#tablaH {
+    background-color: rgb(27, 146, 106);
+}
+
+#direccionYmapa {
+    left: 875px;
+}
+*/
