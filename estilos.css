@@ -38,7 +38,30 @@ header {
     height: 150px;
     width: 170px;
     margin-left: 16px;
+    animation-name: giroLogo;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
 }
+
+/* Animación del logo */
+
+@keyframes giroLogo {
+    10%{
+        /*transform: rotate3d(1,1,1,360deg);*/
+        transform: rotate3d(1,1,1,90deg);
+    }
+    /*20%{
+        transform: rotate3d(1,1,1,180deg);
+    }
+    80%{
+        transform: rotate3d(1,1,1,270deg);
+    }*/
+    90%{
+        transform: rotate3d(1,1,1,360deg);
+    }
+} 
 
 /* Tamaño del grupo de iconos en el header */
 
@@ -58,6 +81,25 @@ header {
     align-items: center;
 }
 
+.iconoGrpHeader:hover {
+    animation: latido 1s ease-in-out none infinite;
+}
+
+@keyframes latido {
+    0%
+    {
+      transform: scale( 1 );    
+    }
+    20%
+    {
+      transform: scale( 1.25 );  
+    }
+     40%
+    {
+      transform: scale( 1.5 );
+    }
+  }
+  
 /* Posición de los iconos en el grupo dentro del header */
 /*#face {
     position: absolute;
@@ -118,11 +160,17 @@ nav {
 }
 
 .itemsNav1:hover {
-    background-color: aqua;
+    background-color: #03adad;
+    transition: 1.2s;
 }
 
 .itemsNav1 a {
     text-decoration: none;
+}
+
+.itemsNav1:hover a {
+    color: white;
+    transition: 1.2s;
 }
 
 /* Posición, color y tamaño del contenido central de la página principal */
@@ -236,7 +284,7 @@ body {
 }
 
 /* Tamaño de las imágenes */
-
+/* Animacion de las imagenes en main */
 main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -250,7 +298,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+
+.elementoMain:hover {
+    transform: scale(1.06);
+    transition: all 0.7s;
 }
 
 .imagenGrpMain1 {
