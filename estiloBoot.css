@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-image: url(imagenes/laboratorio\ header\ 1.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    height: 26vh;
+}
+
+.navbar{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    background-color: aquamarine;
+}
+
+.nav-item {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: 112px;
+    text-transform: uppercase;
+    list-style: none;
+    border-radius: 5%;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    background-color: #03adad;
+    transition: 1.2s;
+}
