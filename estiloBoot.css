@@ -3,12 +3,86 @@
     padding: 0;
 }
 
-.container-fluid {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Estilo del header */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+/* Tamaño del Logo */
+
+#logo {
+    height: 150px;
+    width: 170px;
+    margin-left: 16px;
+    animation-name: giroLogo;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+}
+
+/* Animación del logo */
+
+@keyframes giroLogo {
+    10%{
+        /*transform: rotate3d(1,1,1,360deg);*/
+        transform: rotate3d(1,1,1,90deg);
+    }
+    /*20%{
+        transform: rotate3d(1,1,1,180deg);
+    }
+    80%{
+        transform: rotate3d(1,1,1,270deg);
+    }*/
+    90%{
+        transform: rotate3d(1,1,1,360deg);
+    }
+} 
+
+header {
     background-image: url(imagenes/laboratorio\ header\ 1.jpg);
     background-size: cover;
     /* background-position: center; */
     height: 26vh;
 }
+
+/* Estilo del grupo de iconos de redes sociales, etc */
+
+#contenedorGrupoIconos {
+    width: 25vh;
+    height: 12vh;
+}
+
+.iconoGrpHeader {
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+}
+
+.iconoGrpHeader:hover {
+    animation: latido 1s ease-in-out none infinite;
+}
+
+@keyframes latido {
+    0%
+    {
+      transform: scale( 1 );    
+    }
+    20%
+    {
+      transform: scale( 1.25 );  
+    }
+     40%
+    {
+      transform: scale( 1.5 );
+    }
+  }
+
+  /* Estilos barra de navegación */
 
 .navbar{
     margin: 0px;
@@ -32,3 +106,93 @@
     background-color: #03adad;
     transition: 1.2s;
 }
+
+.nav-link:hover {
+    color: white;
+    transition: 1.2s;
+}
+
+/* Estilo body */
+
+body {
+    /*background-color: lightseagreen;*/
+    background-image: url(imagenes/lab\ fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo de main */
+
+main {
+    text-align: center;
+}
+
+/* .elementoMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.elementoMain:hover {
+    transform: scale(1.06);
+    transition: all 0.7s;
+}
+
+.imagenGrpMain1 {
+    /*margin: 50px;
+    margin-left: 160px;*/
+    height: 255px;
+    width: 255px;
+    border: outset 4px aquamarine;
+}
+
+.caption p {
+    background-color: aquamarine;
+    max-width: 300px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Estilo footer */
+#footer {
+    background-color: rgb(16, 71, 69);
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.itemFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /*align-items: flex-start;
+    justify-content: space-between;*/
+}
+
+.itemFooter h2 {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
+/* @media only screen and (max-width: 930px) {
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #footer {
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-around;
+    }
+    
+    #direccionYmapa {
+        grid-column: 1/3;
+    }
+
+    #mapaGoogle {
+        width: 100%;
+    }
+} */
