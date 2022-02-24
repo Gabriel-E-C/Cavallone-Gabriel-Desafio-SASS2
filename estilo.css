@@ -1,3 +1,51 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+header {
+  display: flex;
+  align-items: center;
+  background-image: url(imagenes/laboratorio\ header\ 1.jpg);
+  background-size: cover;
+  height: 26vh;
+}
+header #logo {
+  height: 150px;
+  width: 170px;
+  margin-left: 16px;
+  animation-name: giroLogo;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 8s;
+}
+@keyframes giroLogo {
+  10% {
+    transform: rotate3d(1, 1, 1, 90deg);
+  }
+  90% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+header #contenedorGrupoIconos {
+  width: 25vh;
+  height: 12vh;
+}
+header #contenedorGrupoIconos .iconoGrpHeader {
+  height: 30px;
+  width: 30px;
+  margin-right: 16px;
+}
+header #contenedorGrupoIconos .iconoGrpHeader:hover {
+  animation: latido 1s ease-in-out none infinite;
+}
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.25);
+  }
+  40% {
+    transform: scale(1.5);
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */
