@@ -116,6 +116,43 @@ main .elementoMain p {
   font-family: "Dancing Script", cursive;
 }
 
+@media only screen and (max-width: 930px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+footer #footer {
+  background-color: #104745;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+footer .itemFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+footer .itemFooter h2 {
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 930px) {
+  #footer {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+
+  #direccionYmapa {
+    grid-column: 1/3;
+  }
+
+  #mapaGoogle {
+    width: 100%;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
