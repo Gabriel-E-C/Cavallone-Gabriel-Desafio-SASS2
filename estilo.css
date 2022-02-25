@@ -1,51 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-header {
-  display: flex;
-  align-items: center;
-  background-image: url(imagenes/laboratorio\ header\ 1.jpg);
-  background-size: cover;
-  height: 26vh;
-}
-header #logo {
-  height: 150px;
-  width: 170px;
-  margin-left: 16px;
-  animation-name: giroLogo;
-  animation-iteration-count: infinite;
-  animation-delay: 7s;
-  animation-timing-function: ease-in-out;
-  animation-duration: 8s;
-}
-@keyframes giroLogo {
-  10% {
-    transform: rotate3d(1, 1, 1, 90deg);
-  }
-  90% {
-    transform: rotate3d(1, 1, 1, 360deg);
-  }
-}
-header #contenedorGrupoIconos {
-  width: 25vh;
-  height: 12vh;
-}
-header #contenedorGrupoIconos .iconoGrpHeader {
-  height: 30px;
-  width: 30px;
-  margin-right: 16px;
-}
-header #contenedorGrupoIconos .iconoGrpHeader:hover {
-  animation: latido 1s ease-in-out none infinite;
-}
-@keyframes latido {
-  0% {
-    transform: scale(1);
-  }
-  20% {
-    transform: scale(1.25);
-  }
-  40% {
-    transform: scale(1.5);
-  }
-}
+/* Error: expected ";".
+ *    ,
+ * 13 | // Colores
+ *    |           ^
+ *    '
+ *   estilo.scss 13:11  root stylesheet */
 
-/*# sourceMappingURL=estilo.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a    \2577 \a 13 \2502  // Colores\d\a    \2502            ^\a    \2575 \a   estilo.scss 13:11  root stylesheet';
+}

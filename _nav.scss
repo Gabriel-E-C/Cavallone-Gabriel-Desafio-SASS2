@@ -1,0 +1,42 @@
+// Variables
+
+//Colores
+
+$color1: aquamarine;
+$color2: #03adad;
+$color3: rgba(126, 126, 252, 40%);
+$color4: rgb(16, 71, 69);
+
+//Estilo
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+
+    #barraNavegacionSuperior {
+        display: flex;
+        justify-content: center;
+
+        .itemsNav1 {
+            margin: 5px;
+            padding: 5px;
+            width: 110px;
+            text-transform: uppercase;
+            list-style: none;
+
+            &:hover {
+                background-color: $color2;
+                transition: 1.2s;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: white;
+                    transition: 1.2s;
+                }
+            }
+        }
+    }
+}
