@@ -4,9 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 //Etilos por secciones
+@import "_body";
 @import "_header";
 @import "_nav";
-@import "_body"
+@import "_main";
 
 // Variables 
 
@@ -20,3 +21,7 @@ $color4: rgb(16, 71, 69);
 // Fuentes
 $fuente1: 'Dancing Script', cursive;
 
+* {
+    margin: 0px;
+    padding: 0px;
+}

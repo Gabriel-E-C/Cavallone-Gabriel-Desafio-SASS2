@@ -1,17 +1,124 @@
-/* Error: expected ";".
- *    ,
- * 13 | // Colores
- *    |           ^
- *    '
- *   estilo.scss 13:11  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 13 \2502  // Colores\d\a    \2502            ^\a    \2575 \a   estilo.scss 13:11  root stylesheet';
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+body {
+  background-image: url(imagenes/lab\ fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+header {
+  background-image: url(imagenes/laboratorio\ header\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 195px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #logo {
+  height: 150px;
+  width: 170px;
+  margin-left: 16px;
+  animation-name: giroLogo;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 8s;
+}
+@keyframes giroLogo {
+  10% {
+    transform: rotate3d(1, 1, 1, 90deg);
+  }
+  90% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+header #contenedorGrupoIconos {
+  width: 25vh;
+  height: 12vh;
+}
+header #contenedorGrupoIconos .iconoGrpHeader {
+  height: 30px;
+  width: 30px;
+  margin-right: 16px;
+}
+header #contenedorGrupoIconos .iconoGrpHeader:hover {
+  animation: latido 1s ease-in-out none infinite;
+}
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.25);
+  }
+  40% {
+    transform: scale(1.5);
+  }
+}
+
+nav {
+  background-color: aquamarine;
+  text-align: center;
+}
+nav #barraNavegaciónSuperior {
+  display: flex;
+  justify-content: center;
+}
+nav #barraNavegaciónSuperior .itemsNav1 {
+  margin: 5px;
+  padding: 5px;
+  width: 110px;
+  text-transform: uppercase;
+  list-style: none;
+}
+nav #barraNavegaciónSuperior .itemsNav1:hover {
+  background-color: #03adad;
+  transition: 1.2s;
+}
+nav #barraNavegaciónSuperior .itemsNav1 a {
+  text-decoration: none;
+}
+nav #barraNavegaciónSuperior .itemsNav1 a:hover {
+  color: white;
+  transition: 1.2s;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: flex-start;
+}
+main .elementoMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .elementoMain:hover {
+  transform: scale(1.06);
+  transition: all 0.7s;
+}
+main .elementoMain .imagenGrpMain1 {
+  height: 200px;
+  width: 200px;
+  border: outset 4px aquamarine;
+}
+main .elementoMain p {
+  background-color: aquamarine;
+  max-width: 300px;
+  font-family: "Dancing Script", cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*# sourceMappingURL=estilo.css.map */
