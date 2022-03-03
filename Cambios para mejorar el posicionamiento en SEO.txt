@@ -1,0 +1,6 @@
+- Cambié el titulo del index y de todas las páginas por titulos más especificos para cada una.
+- Agregué keywords.
+- Agregué una descripción para el index y cada página.
+- Agregué un mapa del sitio en el footer.
+- Mis imágenes ya contenian descripciones en los alt correspondientes.
+- Mis páginas ya contenian solo un H1 para su titulo principal.
