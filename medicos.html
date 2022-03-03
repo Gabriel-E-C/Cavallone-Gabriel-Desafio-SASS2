@@ -5,9 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descritpion" content="Página de ingreso para médicos que trabajan con BIOChem Labs">
+    <link rel="stylesheet" href="estilo.css">
     <title> BIOChem Laboratories Apartado Médicos</title>
 </head>
 <body>
+    <div id="header">
+        <header>
+                <img id="logo" src="imagenes/logo.jpg" alt="microscopio logo">
+                <div id="contenedorGrupoIconos">
+                    <a href="http://facebook.com"><img  id="face" class="iconoGrpHeader" src="imagenes/face.png" alt="facebook icono"></a>
+                    <a href="http://web.whatsapp.com"><img id="whats" class="iconoGrpHeader" src="imagenes/whats.png" alt="whatsapp icono"></a>
+                    <a href="http://instagram.com"><img id="insta" class="iconoGrpHeader" src="imagenes/insta.png" alt="instagram icono"></a>
+                    <a href="#direccionFooter"><img id="direccion" class="iconoGrpHeader" src="imagenes/maps.jpg" alt="google maps icono"></a>
+                    <a href="contacto.html"><img id="email" class="iconoGrpHeader" src="imagenes/arroba.png" alt="arroba icono, contacto"></a>
+                    <a href="presupuesto.html"><img id="presupuesto" class="iconoGrpHeader" src="imagenes/calc.png" alt="calculadora icono"></a>
+                </div>
+        </header>
+    </div>
+    <nav>
+        <ul id="barraNavegaciónSuperior">
+            <li class="itemsNav1">
+               <a href="index.html">
+                   Home
+               </a>
+            </li>
+           <li class="itemsNav1">
+                <a href="#horarios">
+                    Horarios
+                </a>
+            </li>
+            <li class="itemsNav1">
+                <a href="login.html">
+                    Ingresar
+                </a>
+            </li>
+            <li class="itemsNav1">
+                <a href="registrarse.html">
+                    Registrarse
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <br>
     <h1>Ingrese aquí</h1>
     <form action="#" method="post" enctype="application/x-www-form-urlencoded">
         <label for="usuario">Usuario:</label>
@@ -23,41 +62,50 @@
         <input type="reset" value="Blanquear">
     </form>
     <footer>
-        <h2>Sobre BIOChem Labs</h2>
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam et vitae neque? Iste nulla harum, quis explicabo excepturi voluptas quisquam. Enim corrupti reiciendis, harum error itaque sunt distinctio hic fugiat.</p>
-        <br>
-        <h2 id="horarios">Horarios</h2>
-        <table border="1" cellspacing="8">
-            <tr>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miércoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sábados</th>
-            </tr>
-            <tr>
-                <td>08:00 a 13:00</td>
-                <td>08:00 a 13:00</td>
-                <td>08:00 a 13:00</td>
-                <td>08:00 a 13:00</td>
-                <td>08:00 a 13:00</td>
-                <td>08:00 a 13:00</td>
-            </tr>
-            <tr>
-                <td>16:00 a 19:00</td>
-                <td>16:00 a 19:00</td>
-                <td>16:00 a 19:00</td>
-                <td>16:00 a 19:00</td>
-                <td>16:00 a 19:00</td>
-                <td>No hay atención</td>
-            </tr>
-        </table>
-
-        <h2 id="direccion">Encontranos en</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0991522412096!2d-58.37628348543468!3d-34.60165418046006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaccf4a5be6f%3A0x97ebb6aac5198f6c!2sCoderhouse!5e0!3m2!1ses!2sar!4v1642471546729!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-    </footer>   
-</body>
+        <div id="footer">
+        <div id="sobreNos" class="itemFooter">
+            <h2>Sobre BIOChem Labs</h2>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam et vitae neque? Iste nulla harum, quis explicabo excepturi voluptas quisquam. Enim corrupti reiciendis, harum error itaque sunt distinctio hic fugiat.</p>
+        </div>
+        <div id="tablaHorarios" class="itemFooter">
+            <h2 id="horarios">Horarios</h2>
+            <br>
+            <div  id="tablaH">
+                <table border="1" cellspacing="8">
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábados</th>
+                    </tr>
+                    <tr>
+                        <td>08:00 a 13:00</td>
+                        <td>08:00 a 13:00</td>
+                        <td>08:00 a 13:00</td>
+                        <td>08:00 a 13:00</td>
+                        <td>08:00 a 13:00</td>
+                        <td>08:00 a 13:00</td>
+                    </tr>
+                    <tr>
+                        <td>16:00 a 19:00</td>
+                        <td>16:00 a 19:00</td>
+                        <td>16:00 a 19:00</td>
+                        <td>16:00 a 19:00</td>
+                        <td>16:00 a 19:00</td>
+                        <td>No hay atención</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="direccionYmapa" class="itemFooter">
+            <h2 id="direccionFooter">Encontranos en</h2>
+            <br>
+            <iframe id="mapaGoogle" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0991522412096!2d-58.37628348543468!3d-34.60165418046006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaccf4a5be6f%3A0x97ebb6aac5198f6c!2sCoderhouse!5e0!3m2!1ses!2sar!4v1642471546729!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    </footer>
+    </body>
 </html>

@@ -1,16 +1,9 @@
-// Variables
-
-//Colores
-
-$color1: aquamarine;
-$color2: #03adad;
-$color3: rgba(126, 126, 252, 40%);
-$color4: rgb(16, 71, 69);
+@import "_colores";
 
 //Estilo
 
 nav {
-    background-color: aquamarine;
+    background-color: map-get($map: $colores, $key: color1);
     text-align: center;
 
     #barraNavegaciónSuperior {
@@ -25,7 +18,7 @@ nav {
             list-style: none;
 
             &:hover {
-                background-color: $color2;
+                background-color: map-get($map: $colores, $key: color2);;
                 transition: 1.2s;
             }
 

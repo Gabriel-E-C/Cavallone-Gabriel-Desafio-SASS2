@@ -7,11 +7,11 @@ body {
 }
 
 header {
+  height: 195px;
+  width: 100%;
   background-image: url(imagenes/laboratorio\ header\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 195px;
-  width: 100%;
   position: relative;
   top: 0px;
   left: 0px;
@@ -122,6 +122,50 @@ main .elementoMain p {
     grid-template-rows: repeat(3, 1fr);
   }
 }
+.pagSecundariaMain {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formularioTitulos {
+  display: flex;
+  height: 25vh;
+  margin-top: 7vh;
+}
+
+.formularioGeneral, #registroFormulario, #olvidoPassFormulario, #logInFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(26, 26, 250, 0.5);
+}
+
+#logInFormulario {
+  height: 200px;
+  width: 19vw;
+}
+
+.formularioLabels {
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#olvidoPassFormulario {
+  height: 260px;
+  width: 19vw;
+}
+
+#registroFormulario {
+  height: 350px;
+  width: 19vw;
+  /*border: 5px solid blueviolet;*/
+}
+
 footer #footer {
   background-color: #104745;
   min-height: 500px;

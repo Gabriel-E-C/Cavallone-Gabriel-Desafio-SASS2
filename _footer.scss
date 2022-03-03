@@ -1,7 +1,11 @@
+@import "_colores";
+
+//Estilos
+
 footer {
 
     #footer {
-        background-color: rgb(16, 71, 69);
+        background-color: map-get($map: $colores, $key: color4);
         min-height: 500px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
